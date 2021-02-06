@@ -680,6 +680,30 @@ div .text-3 h2{
     }
 }
 
+@media (max-width: 1887px){
+    .header-info-popular-r{
+        width: 32.68%;
+    }
+}
+
+@media (max-width: 1862px){
+    .header-info-popular-r{
+        width: 32.67%;
+    }
+}
+
+@media (max-width: 1836px){
+    .header-info-popular-r{
+        width: 32.66%;
+    }
+}
+
+@media (max-width: 1811px){
+    .header-info-popular-r{
+        width: 32.65%;
+    }
+}
+
 @media (max-width: 1800px){
     .center{
         width: 100%;
@@ -772,7 +796,7 @@ div .text-3 h2{
     }
 
     #marca img{
-        margin-left: 210px;
+        margin-left: 290px;
     }
 
     #footer-footer div{
