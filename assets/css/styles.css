@@ -569,21 +569,70 @@ div .text-3 h2{
 }
 
 #header-infob{
-    width: 45%;
-    margin: 715px auto 0px auto;
+    width: 49.74%;
+    margin: 0px auto 0px auto;
     display: inline-block;
     top: 50%;
+    border-radius: 10px;
 }
 
 .header-infot{
     background: #663300;
     color: #eee;
     font-size: 50px;
-    padding: 0px 0px 10px 10px;
+    padding: 0px 0px 0px 0px;
 }
 
 .header-infot strong{
     font-size: 50px;
+}
+
+#header-info-popular{
+        margin-top: 3px;
+        background: rgb(197, 197, 197);
+        text-align: left;
+}
+
+#header-info-popular a{
+    text-decoration: none;
+}
+
+.header-info-popular-r{
+    display: inline-block;
+    width: 32.69%;
+    margin-top: 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.popular-info h3{
+    color: rgb(78, 78, 78);
+    padding-left: 18px;
+}
+
+.header-info-popular-r img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    transition: all .05s;
+}
+
+.header-info-popular-r:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+    transform: scale(1.10);
+    transition: all .09s ;
+}
+
+#popular-info{
+    width: 90%;
+    margin: 0px auto;
+}
+
+#popular-info p{
+    font-size: 20px;
 }
 
 @media (max-width: 2000px){
