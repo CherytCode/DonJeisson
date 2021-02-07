@@ -9,6 +9,42 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
+
+    /* SCROLL BAR*/
+}
+
+body::-webkit-scrollbar {
+    width: 4px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    /*display: none; Ocultar scroll */
+}
+
+/* THUMB SCROLL BAR*/
+
+body::-webkit-scrollbar-thumb {
+    background: #8f8a85;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #665d55;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: #58452f;
+}
+
+/* TRACK SCROLLBAR */
+
+body::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
 }
 
 #header {
@@ -114,13 +150,14 @@ nav li{
 
 nav  ul li ul li{
     text-align: left;
-    background-color:#fbeee6;
+    background-color: rgb(214, 214, 214);
     left: -22px;
     width: 170px;
     height: 50px;
     padding: 0px;
     margin: 0px;
-    border-bottom: 0.5px solid #e8dfd9;
+    border-bottom: 0.5px solid #ccc;
+    color: rgba(46, 44, 42);
 }
 
 nav ul li ul li a{
@@ -129,13 +166,13 @@ nav ul li ul li a{
 
 nav  ul li ul li ul li{
     text-align: left;
-    background-color:#fbeee6;
+    background-color: rgb(214, 214, 214);
     left: -20px;
     width: 230px;
-    height: 48px;
+    height: 50px;
     padding: 0px;
     margin: 0px;
-    border-bottom: 0.5px solid #e8dfd9;
+    border-bottom: 0.5px solid #ccc;
 }
 
 nav ul li ul li a{
@@ -143,7 +180,7 @@ nav ul li ul li a{
 }
 
 nav li ul li:hover{
-    background-color: rgba(46, 44, 42, 0.692);
+    background-color: rgb(112, 112, 112);
 }
             
 nav li:hover{
@@ -154,7 +191,7 @@ nav li:hover{
 }
 
 nav ul li ul li:hover{
-    border-bottom: 0px;
+    background-color: rgba(126, 126, 126, 0.973);
 }
             
 nav li>ul{
@@ -591,6 +628,8 @@ div .text-3 h2{
         margin-top: 3px;
         background: rgb(197, 197, 197);
         text-align: left;
+        height: 372px;
+        border-radius: 0px 0px 10px 10px;
 }
 
 #header-info-popular a{
@@ -603,6 +642,7 @@ div .text-3 h2{
     margin-top: 10px;
     background: #eee;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .popular-info h3{
@@ -616,7 +656,7 @@ div .text-3 h2{
     transition: all .05s;
 }
 
-.header-info-popular-r:hover{
+.header-info-popular-r:hover img{
     cursor: pointer;
     -webkit-transform: scale(1.10);
     -moz-transform: scale(1.10);
