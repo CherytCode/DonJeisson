@@ -187,7 +187,7 @@ nav li:hover{
       background-color: rgba(46, 44, 42, 0.692);
       color:#fff;
       transition: 300ms all;
-      border-bottom: 1px solid #fff;
+      border-bottom: 2px solid #eee;
 }
 
 nav ul li ul li:hover{
@@ -614,7 +614,7 @@ div .text-3 h2{
 }
 
 .header-infot{
-    background: #663300;
+    background: #4f2c1d;
     color: #eee;
     font-size: 50px;
     padding: 0px 0px 0px 0px;
@@ -628,7 +628,7 @@ div .text-3 h2{
         margin-top: 3px;
         background: rgb(197, 197, 197);
         text-align: left;
-        height: 372px;
+        height: 380px;
         border-radius: 0px 0px 10px 10px;
 }
 
@@ -673,6 +673,80 @@ div .text-3 h2{
 
 #popular-info p{
     font-size: 20px;
+}
+
+#domicilios-image{
+    max-width: 2200px;
+}
+
+#domicilios-image img{
+    width: 100%;
+}
+
+.domicilios-com h2{
+   color: #4f2c1d;
+   margin-bottom: 25px;
+}
+
+.domicilios-com{
+    padding-top: 130px;
+}
+
+#botones-domicilio{
+    margin-top: 30px;
+    width: 100%;
+}
+
+#botones-domicilio a{
+    margin: 0px 50px 0px 50px;
+    color: #eee;
+    text-decoration: none;
+    background:#ff671f;
+    width: 200px;
+    font-size: 35px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+#botones-domicilio a:hover{
+    background: rgb(255,116,50);
+    background: radial-gradient(circle, rgba(255,116,50,1) 0%, rgba(255,103,31,1) 100%);
+    -webkit-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.75);
+    transition: 100ms all;
+}
+
+#terminos-footer-domicilio a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+}
+
+#terminos-footer-domicilio a:hover{
+    color: #ccc;
+}
+
+#terminos-footer-domicilio ul li{
+    list-style: none;
+    height: 30px;   
+    text-align: center;
+    line-height: 10px;
+    color: rgb(212, 212, 212);
+}
+
+div#terminos-footer-domicilio {
+    padding-bottom: 0px;
+}
+
+#footer-domicilios{
+    background: rgb(53, 53, 53);
+    width: 100%;
+    height: 450px;
+    line-height: 70px;
+    color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 @media (max-width: 2000px){
