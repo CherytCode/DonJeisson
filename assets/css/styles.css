@@ -144,7 +144,7 @@ nav li{
       height: 100px;
       position:relative;
       color:rgb(255, 255, 255);
-      transition: 300ms all;
+      transition: 100ms all;
 }
 
 
@@ -186,7 +186,7 @@ nav li ul li:hover{
 nav li:hover{
       background-color: rgba(46, 44, 42, 0.692);
       color:#fff;
-      transition: 300ms all;
+      transition: 100ms all;
       border-bottom: 2px solid #eee;
 }
 
@@ -206,7 +206,7 @@ nav li:hover>ul{
       color: black;
       width: 215px;
       height: 70px;
-      transition: 300ms all;
+      transition: 100ms all;
 }
 
 nav ul li ul li:hover>ul{
@@ -217,7 +217,7 @@ nav ul li ul li:hover>ul{
     color: black;
     width: 270px;
     height: 70px;
-    transition: 300ms all;
+    transition: 100ms all;
     margin-left: 190px;
     margin-top: -300px;
 }
