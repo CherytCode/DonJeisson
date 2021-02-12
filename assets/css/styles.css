@@ -749,6 +749,79 @@ div#terminos-footer-domicilio {
     padding-right: 50px;
 }
 
+#ubicanos-article{
+    background: rgb(243, 243, 243);
+    margin: 0px;
+    padding: 0px;
+}
+
+#ubicanos-article:hover{
+    background: #ddd;
+}
+
+.article-item {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: left;
+    height: 293px;
+}
+
+.article-item .image-wrap {
+    width: 410px;
+    height: 270px;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+    border: 0px ;
+}
+
+.image-wrap img{
+    width: 410px;
+}
+
+.article-item h2 {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 7px;
+}
+
+.article-item .date {
+    display: block;
+    width: 100%;
+    color: rgb(136, 136, 136);
+    height: 160px;
+    max-height: 160px;
+}
+
+.date{
+    font-size: 20px;
+}
+
+.article-item a {
+    color: #444;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+#como-llegar-btn{
+    background: rgb(255,116,50);
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid rgb(255, 101, 30);
+    transition: 100ms all;
+}
+
+#como-llegar-btn:hover{
+    background: #eee;
+    color: rgb(255,116,50);
+    transition: 100ms all;
+}
+
 @media (max-width: 2000px){
     #slider-info{
         margin-left: 100%;
