@@ -201,7 +201,188 @@
         <a class='flotante' href='#' ><img src='https://i.ibb.co/mHZqfFL/carrito2.png' border="0"/ title="Tus Compras"></a>
 
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
+
+        <style>
+            #todo .bebidas {width:325px;height:400px;margin:4px 2px;padding:10px;display:none;background:#ddd;text-align: left;}
+            #todo .bebidas img{width:300px;}
+            #todo .bebidas:hover{background: #ccc;}
+
+            #todo .pan {width:325px;height:400px;margin:4px 2px;padding:10px;display:none;background:#ddd;text-align: left;}
+            #todo .pan img{width:300px;}
+            #todo .pan:hover{background: #ccc;}
+
+            #todo .galletas {width:325px;height:400px;margin:4px 2px;padding:10px;display:none;background:#ddd;text-align: left;}
+            #todo .galletas img{width:300px;}
+            #todo .galletas:hover{background: #ccc;}
+
+            #todo .all {width:325px;height:350px;margin:4px 2px;padding:4px;display:none;background:#ddd}
+            #todo .aviso {width:100%;height:100%;margin:0px auto 0px auto;padding:4px;display:inline-block;background:#ddd;cursor:default;}
+            #todo .aviso:hover{background: #ccc;}
+            #todo {width: 70%;margin: 0px auto 30px auto;background: rgb(226, 226, 226);
+                -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            border-radius: 5px;
+}
+        </style>
+            
+        <script>
+            function filtcat(c) {
+            var x = document.getElementById("todo");
+            var y = x.querySelectorAll("div");
+            var i,c;
+            for (i = 0; i < y.length; i++) {
+            if (y[i].className == c || c == "all") {y[i].style.display = "inline-block"}
+            else {y[i].style.display = "none"}
+            }
+            }
+    
+            function ocultar() {
+            document.getElementById("aviso").style.display = 'none';
+            }
+        </script>
+            
+                <div id="todo">
+                    <button onclick="filtcat('pan')" class="btn-categoria">Pan</button>
+                    <button onclick="filtcat('bebidas')" class="btn-categoria">Bebidas</button>
+                    <button onclick="filtcat('galletas')" class="btn-categoria">Galletas</button>
+                    <button onclick="filtcat('all'); ocultar();" class="btn-categoria">Despensa</button>
+
+                    <hr style="border: 1px solid #ccc;">
+
+                    <div class="aviso" id="aviso"><h2 style="margin: 215px auto;">Selecciona Una Categoria...</h2></div>
+
+                    <!-- PAN, CON BASES DE DATOS Y JAVASCRIPT SE PUEDE BORRAR-->
+
+                    <div class="pan">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/LkYHtk8/pan.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="pan">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/LkYHtk8/pan.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="pan">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/LkYHtk8/pan.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="pan">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/LkYHtk8/pan.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="pan">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/LkYHtk8/pan.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+
+                    <!-- BEBIDAS, CON BASES DE DATOS Y JAVASCRIPT SE PUEDE BORRAR-->
+
+                    <div class="bebidas">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/NrGw7Wc/bebida.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="bebidas">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/NrGw7Wc/bebida.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="bebidas">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/NrGw7Wc/bebida.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="bebidas">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/NrGw7Wc/bebida.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="bebidas">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/NrGw7Wc/bebida.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+
+                    <!-- GALLETAS, CON BASES DE DATOS Y JAVASCRIPT SE PUEDE BORRAR-->
+
+                    <div class="galletas">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/gjQqtyL/galleta.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="galletas">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/gjQqtyL/galleta.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="galletas">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/gjQqtyL/galleta.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="galletas">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/gjQqtyL/galleta.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                    <div class="galletas">
+                        <a href="" style="text-decoration: none;color: #222;">
+                            <img src="https://i.ibb.co/gjQqtyL/galleta.png">
+                            <hr style="border: 1px solid #bbb;">
+                            <h3 style="padding-left: 10px;font-weight: 500;font-size: 30px;">Nombre Producto.</h3>
+                            <h4 style="padding-left: 10px;font-weight: 500;font-size: 20px;">&dollar;Precio.</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
         <footer id="footer" style="
         -webkit-box-shadow: inset 0px 4px 19px 0px rgba(0,0,0,0.66);

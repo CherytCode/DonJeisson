@@ -822,6 +822,25 @@ div#terminos-footer-domicilio {
     transition: 100ms all;
 }
 
+.btn-categoria{
+    width: 300px;
+    color: #4f2c1d;
+    font-weight: 700;
+    background: rgb(226, 226, 226);
+    border: 0px;
+    transition: 100ms all;
+    height: 45px;
+}
+
+.btn-categoria:hover{
+    background: #eee;
+    transition: 100ms all;
+}
+
+.btn-categoria:checked{
+    border: 0px;
+}
+
 @media (max-width: 2000px){
     #slider-info{
         margin-left: 100%;
