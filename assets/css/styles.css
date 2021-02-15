@@ -280,12 +280,20 @@ nav ul li ul li:hover>ul{
     width: 400px;
 }
 
+#redes-footer ul li img:hover{
+    -webkit-box-shadow: 0px 0px 13px -1px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 13px -1px rgba(255,255,255,1);
+box-shadow: 0px 0px 13px -1px rgba(255,255,255,1);
+}
+
 #redes-footer ul li{
     display: inline-block;
+    border-radius: 100%;
 }
 
 #redes-footer img{
     width: 50px;
+    border-radius: 100%;
 }
 
 #correo-footer{
@@ -430,17 +438,66 @@ nav ul li ul li:hover>ul{
 .flotante img{
     height: 60px;
     border: 0px;
-    border-radius: 100px;
+    border-radius: 100%;
     background-color: rgb(31, 31, 31);
-    transition: all 300ms;
+    transition: all 400ms;
 }
 
 .flotante img:hover{
     background-color: rgb(110, 110, 110);
-    transition: all 300ms;
+    transition: all 400ms;
     -webkit-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.75);
     box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.75);
+    border-radius: 30%;
+}
+
+.flotante2 {
+    display:scroll;
+        position:fixed;
+        bottom:80%;
+        right:100px;
+}
+
+.flotante2 img{
+    height: 60px;
+    border: 0px;
+    border-radius: 100%;
+    background-color: rgb(31, 31, 31);
+    transition: all 400ms;
+}
+
+.flotante2 img:hover{
+    background-color: rgb(110, 110, 110);
+    transition: all 400ms;
+    -webkit-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.75);
+    border-radius: 30%;
+}
+
+.flotante3 {
+    display:scroll;
+        position:fixed;
+        bottom:80%;
+        right:100px;
+}
+
+.flotante3 img{
+    height: 60px;
+    border: 0px;
+    border-radius: 100%;
+    background-color: rgb(31, 31, 31);
+    transition: all 400ms;
+}
+
+.flotante3 img:hover{
+    background-color: rgb(110, 110, 110);
+    transition: all 400ms;
+    -webkit-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.75);
+    border-radius: 30%;
 }
 
 .slideshow-container{
@@ -823,7 +880,7 @@ div#terminos-footer-domicilio {
 }
 
 .btn-categoria{
-    width: 300px;
+    width: 329.1px;
     color: #4f2c1d;
     font-weight: 700;
     background: rgb(226, 226, 226);
@@ -833,8 +890,17 @@ div#terminos-footer-domicilio {
 }
 
 .btn-categoria:hover{
-    background: #eee;
+    background: rgb(201, 201, 201);
     transition: 100ms all;
+    cursor: pointer;
+}
+
+.btn-categoria:focus{
+    background: rgb(156, 156, 156);
+    border: 0;
+    outline: none;
+    color: #eee;
+
 }
 
 .btn-categoria:checked{
